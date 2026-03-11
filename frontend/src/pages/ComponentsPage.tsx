@@ -15,9 +15,9 @@ const ComponentsPage = () => {
       : component.filter((c) => c.category === activeCategory);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="min-h-screen flex bg-black text-white flex-col">
       <Navbar />
-      <div className="container py-10 flex-1">
+      <div className="container py-10 mt-10  flex-1">
         <h1 className="text-3xl font-bold mb-2">Components Library</h1>
         <p className="text-muted-foreground mb-8">Browse reusable React components ready to copy into your project.</p>
 

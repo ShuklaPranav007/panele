@@ -154,7 +154,7 @@ const Index = () => {
 
               <Link
                 to="/pages"
-                className="text-sm font-medium text-primary hover:underline flex items-center gap-1"
+                className="text-sm font-medium text-zinc-400 hover:underline flex items-center gap-1"
               >
                 View all <ArrowRight className="h-3.5 w-3.5" />
               </Link>
