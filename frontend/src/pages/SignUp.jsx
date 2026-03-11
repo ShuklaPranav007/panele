@@ -12,7 +12,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const success = await signup(form.name, form.email, form.password);
-    if (success) navigate("/dashboard");
+    if (success) navigate("/");
   };
 
   return (

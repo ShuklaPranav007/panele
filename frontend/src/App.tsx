@@ -19,7 +19,6 @@ import About from "./pages/About";
 import { AuthProvider, useAuth } from "./context/AuthContext";
 import Signin from "./pages/Signin";
 import Signup from "./pages/Signup";
-import Dashboard from "./pages/Dashboard";
 
 const queryClient = new QueryClient();
 
@@ -46,12 +45,7 @@ const AppRoutes = () => (
     {/* ── New Auth Routes ── */}
     <Route path="/signin"         element={<Signin />} />
     <Route path="/signup"         element={<Signup />} />
-    <Route path="/dashboard"      element={
-      <PrivateRoute>
-        <Dashboard />
-      </PrivateRoute>
-    } />
-
+    
     {/* ── 404 (keep at bottom) ── */}
     <Route path="*"               element={<NotFound />} />
   </Routes>

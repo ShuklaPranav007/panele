@@ -12,7 +12,7 @@ export default function Signin() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const success = await signin(form.email, form.password);
-    if (success) navigate("/dashboard");
+    if (success) navigate("/");
   };
 
   return (
